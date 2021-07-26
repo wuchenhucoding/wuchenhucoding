@@ -104,7 +104,7 @@ def search():
                             student_query.append(d)
                     elif name!='':
                         if d['name']==name:
-                            stduent_query.append(d)
+                            student_query.append(d)
             #显示查询结果
             show_student(student_query)
             #清空列表
@@ -211,7 +211,7 @@ def sort():
             student_new.append(d)
     else:
         return
-    asc_or_desc=input('请选择(0.升序,1.降序)：')
+    asc_or_desc=input('请选择(0.升序,1.降序):')
     if asc_or_desc=='0':
         asc_or_desc_bool=False
     if asc_or_desc=='1':
@@ -251,7 +251,7 @@ def show():
             for item in students:
                 student_lst.append(eval(item))
             if student_lst:
-                show_studnet(student_lst)
+                show_student(student_lst)
     else:
         print('暂未保存过数据！！！')
 
